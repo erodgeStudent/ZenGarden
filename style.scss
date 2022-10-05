@@ -1,4 +1,9 @@
 /*
 @use "atoms"
 @use "molecules"
-@use "organism" 
+@use "organism" */
+
+//bold headlines
+h1, h2, h3 {
+  @include boldHeadlines;
+}
