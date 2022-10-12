@@ -3,6 +3,38 @@
 body{
   font-family: 'Space Grotesk', sans-serif;
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     font-weight: bold;
+}
+img{
+  max-width: 20%;
+}
+.fonts{
+  background-color: #1f1f1f;
+  
+  color: white;
+}
+#planet{
+  background-color: hsla(211, 67%, 55%, .2);
+  width: fit-content;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+#galaxy{
+  background-color: hsla(341, 73%, 52%, .2);
+  width: fit-content;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+#sun{
+  background-color: 	hsla(35, 22%, 83%, .2);
+  width: fit-content;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
 }
