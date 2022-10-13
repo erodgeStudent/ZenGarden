@@ -1,18 +1,26 @@
-/* list of molecules
-header - includes h1 and h2
-all of the divs including h3 and p.
-footer
-nav*/
+@import "variables";
+@import "atoms";
+@import "organisms";
 
-//add mixins
-//mixin for collapsible sidebar
-@use "variables";
-@mixin dropdown{
+
+@mixin no-show{
+  list-style-type: none;
+  display: none;
+  background-color: $pop-up-background;
+}
+@mixin show-nav-options{
+  display: block;
+  top: 100%;
+  cursor: pointer;
+  width: fit-content;
 }
 @mixin boldHeadlines{
   font-family:$body-font;
   font-weight: bold;
 }
-//mixin for <h3> and <p> divs
-@mixin paragraphs {
+@mixin style-li{
+  list-style-type: none;
+  display: block;
+  color: $p-font;
 }
+

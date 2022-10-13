@@ -1,18 +1,56 @@
-@charset "UTF-8";
-/* Error: Undefined mixin.
- *   ,
- * 8 |   @include boldHeadlines;
- *   |   ^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   style.scss 8:3  root stylesheet */
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
+@import "variables";
+@import "molecules";
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*building according to wireframes*/
+body {
+  font-family: $body-font;
+  background-color: $body-background;
+  color: $p-font;
+}
+h1{
+  color: $sun-h1-font;
+}
+h2{
+  color: $sun-h2-font;
+}
+h3{
+  color: $sun-h3-font;
+}
+header {
   display: block;
-  padding: 1em;
-  margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   ╷\a 8 │   @include boldHeadlines;\d\a   │   ^^^^^^^^^^^^^^^^^^^^^^\a   ╵\a   style.scss 8:3  root stylesheet";
+}
+header h1 {
+  text-align: center;
+  font-size: smaller;
+}
+header h2 {
+  text-align: center;
+}
+.design-selection nav{
+  @include no-show;
+}
+.design-selection:hover nav{
+  @include show-nav-options;
+  
+}
+.design-selection:hover nav li{
+  @include style-li;
+}
+.design-archives nav{
+  @include no-show;
+}
+.design-archives:hover nav{
+  @include show-nav-options;
+}
+.design-archives:hover nav li{
+  @include style-li;
+}
+.zen-resources ul{
+  @include no-show;
+}
+.zen-resources:hover ul{
+  @include show-nav-options;
 }
 
-/*# sourceMappingURL=style.scss.map */

@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
-//font colors
-$h1-font: #DE2B64;
-$h2-font: #1F1F1F;
-$h3-font: #ffffff;
-$p-font: #ffffff;
-
 //font styles
 $body-font: 'Space Grotesk', sans-serif;
+$body-background: #555;
+$p-font: #ffffff;
+
+//galaxy font colors
+$galaxy-h1-font: #DE2B64;
+$galaxy-h2-font: #1F1F1F;
+$galaxy-h3-font: #ffffff;
+
   
-//background colors
-$body-background: #1F1F1F;
-$p-background1: #6E9378;
-$p-background2: #96C5B0;
-$p-background3: #F5E214;
+//galaxy background colors
+
+$galaxy-p-background1: #6E9378;
+$galaxy-p-background2: #96C5B0;
+$galaxy-p-background3: #F5E214;
+
+//sun font colors
+$sun-h1-font: #FAB943;
+$sun-h2-font: #F59D2e;
+$sun-h3-font: #A99984;
+
+//sun background colors
+$sun-background-color: #1F1F1F;
+$pop-up-background: #DDD5CA;
+
