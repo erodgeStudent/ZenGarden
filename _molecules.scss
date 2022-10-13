@@ -21,6 +21,8 @@
 @mixin style-li{
   list-style-type: none;
   display: block;
-  color: $p-font;
+  a{
+    color: #555;
+  }
 }
 

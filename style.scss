@@ -8,6 +8,9 @@ body {
   background-color: $body-background;
   color: $p-font;
 }
+a{
+  color: $link-font;
+}
 h1{
   color: $sun-h1-font;
 }
@@ -52,5 +55,8 @@ header h2 {
 }
 .zen-resources:hover ul{
   @include show-nav-options;
+  a{
+    color: #555;
+  }
 }
 
