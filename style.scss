@@ -12,13 +12,16 @@ a{
   color: $link-font;
 }
 h1{
-  color: $sun-h1-font;
+  color: $sun-background-color;
 }
 h2{
-  color: $sun-h2-font;
+  color: $sun-background-color;
 }
 h3{
   color: $sun-h3-font;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
 }
 header {
   display: block;
@@ -59,4 +62,46 @@ header h2 {
     color: #555;
   }
 }
+
+
+header {
+  background-image: url(images/fullSun.jpg);
+  background-size: 700px;
+  background-blend-mode: normal;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.summary {
+  font-size: .75em;
+}
+
+.benefits {
+  background-image: url(images/sunAndMountains.jpg);
+  background-size: 100%;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
+  color: $sun-background-color;
+}
+
+.explanation {
+  background-image: url(images/nasa-Sun.jpg);
+  background-size: 1000px;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
+}
+
+.explanation p {
+  text-shadow: 1px 1px #555;
+}
+
+.benefits > h3 {
+  color: $sun-background-color;
+}
+
 

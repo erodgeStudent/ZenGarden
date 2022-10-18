@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"); /*list of atoms in html
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*list of atoms in html
 h1
 h2
 p
@@ -20,15 +21,22 @@ a {
 }
 
 h1 {
-  color: #FAB943;
+  color: #1F1F1F;
 }
 
 h2 {
-  color: #F59D2e;
+  color: #1F1F1F;
 }
 
 h3 {
   color: #A99984;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header {
@@ -55,6 +63,8 @@ header h2 {
   display: block;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -62,6 +72,7 @@ header h2 {
   list-style-type: none;
   display: block;
 }
+
 .design-selection:hover nav li a {
   color: #555;
 }
@@ -76,6 +87,8 @@ header h2 {
   display: block;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -83,6 +96,7 @@ header h2 {
   list-style-type: none;
   display: block;
 }
+
 .design-archives:hover nav li a {
   color: #555;
 }
@@ -97,10 +111,52 @@ header h2 {
   display: block;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
+
 .zen-resources:hover ul a {
   color: #555;
 }
 
+header {
+  background-image: url(images/fullSun.jpg);
+  background-size: 700px;
+  background-blend-mode: normal;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.summary {
+  font-size: .75em;
+}
+
+.benefits {
+  background-image: url(images/sunAndMountains.jpg);
+  background-size: 100%;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
+  color: #1F1F1F;
+}
+
+.explanation {
+  background-image: url(images/nasa-Sun.jpg);
+  background-size: 1000px;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
+}
+
+.explanation p {
+  text-shadow: 1px 1px #555;
+}
+
+.benefits > h3 {
+  color: #1F1F1F;
+}
 /*# sourceMappingURL=style.css.map */
