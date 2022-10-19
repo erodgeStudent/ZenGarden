@@ -7,6 +7,12 @@ body {
   font-family: $body-font;
   background-color: $body-background;
   color: $p-font;
+  margin: 0;
+  padding: 0;
+}
+*, html {
+  margin:0;
+  padding:0;  
 }
 a{
   color: $link-font;
@@ -20,12 +26,11 @@ h2{
 h3{
   color: $sun-h3-font;
   font-size: 2em;
-  display: flex;
   justify-content: center;
 }
 header {
   display: block;
-  border-bottom: 2px solid black;
+  margin-top: 10px;
 }
 header h1 {
   text-align: center;
@@ -34,27 +39,16 @@ header h1 {
 header h2 {
   text-align: center;
 }
-.design-selection nav{
+.design-selection nav, .design-archives nav, .zen-resources ul{
   @include no-show;
 }
-.design-selection:hover nav{
+
+.design-selection:hover nav, .design-archives:hover nav{
   @include show-nav-options;
   
 }
-.design-selection:hover nav li{
+.design-selection:hover nav li, .design-archives:hover nav li{
   @include style-li;
-}
-.design-archives nav{
-  @include no-show;
-}
-.design-archives:hover nav{
-  @include show-nav-options;
-}
-.design-archives:hover nav li{
-  @include style-li;
-}
-.zen-resources ul{
-  @include no-show;
 }
 .zen-resources:hover ul{
   @include show-nav-options;
@@ -79,6 +73,7 @@ header {
 
 .benefits {
   background-image: url(images/sunAndMountains.jpg);
+  background-image: 100%;
   background-size: 100%;
   padding-left: .75em;
   padding-right: .75em;
@@ -103,5 +98,4 @@ header {
 .benefits > h3 {
   color: $sun-background-color;
 }
-
 
