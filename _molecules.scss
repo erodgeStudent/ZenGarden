@@ -10,6 +10,7 @@
 }
 @mixin show-nav-options{
   display: block;
+  justify-self: center;
   top: 100%;
   cursor: pointer;
   width: fit-content;

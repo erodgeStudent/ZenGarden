@@ -17,6 +17,9 @@ body {
 a{
   color: $link-font;
 }
+p{
+  margin: 5px;
+}
 h1{
   color: $sun-background-color;
 }
@@ -27,11 +30,9 @@ h3{
   color: $sun-h3-font;
   font-size: 2em;
   justify-content: center;
+  margin:5px;
 }
-header {
-  display: block;
-  margin-top: 10px;
-}
+
 header h1 {
   text-align: center;
   font-size: smaller;
@@ -45,20 +46,25 @@ header h2 {
 
 .design-selection:hover nav, .design-archives:hover nav{
   @include show-nav-options;
-  
+  justify-content: center;  
 }
 .design-selection:hover nav li, .design-archives:hover nav li{
   @include style-li;
+  justify-content: center;
 }
 .zen-resources:hover ul{
   @include show-nav-options;
+  justify-content: center;
   a{
+    justify-content: center;
     color: #555;
   }
 }
 
 
 header {
+  display: block;
+  margin-top: 10px;
   background-image: url(images/fullSun.jpg);
   background-size: 700px;
   background-blend-mode: normal;
@@ -69,6 +75,7 @@ header {
 
 .summary {
   font-size: .75em;
+  text-align: center;
 }
 
 .benefits {
@@ -98,4 +105,20 @@ header {
 .benefits > h3 {
   color: $sun-background-color;
 }
-
+.design-selection{
+  grid-area: selection;
+}
+.design-archives{
+  grid-area: archives;
+}
+.zen-resources{
+  grid-area: resources;
+}
+.wrapper{
+  grid-area:wrap;
+  display: grid;
+  grid-template-areas: 'selection archives resources';
+}
+.wrapper > *{
+  text-align: center;
+}
