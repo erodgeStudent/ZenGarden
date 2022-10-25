@@ -95,7 +95,8 @@ header {
 footer{
   display: flex;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin: 5px 20px 20px 20px;
+  background-color: $wrapper-background;
 }
 footer a{
   padding: 3px;
@@ -157,6 +158,7 @@ footer a{
   grid-area:wrap;
   display: grid;
   margin-left: 15px;
+  margin-right: 15px;
   grid-template-areas: 'selection archives resources';
   background-color: $wrapper-background;
 }
@@ -168,4 +170,8 @@ footer a{
   justify-content: center;
   width:max-content;
   font-size:medium;
+}
+
+.requirements p:last-of-type{
+  margin-top: 30px;
 }
