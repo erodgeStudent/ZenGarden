@@ -11,7 +11,7 @@ li
 /*building according to wireframes*/
 body {
   font-family: "Space Grotesk", sans-serif;
-  background-color: #555;
+  background-color: black;
   color: #ffffff;
   margin: 0;
   padding: 0;
@@ -31,16 +31,17 @@ p {
 }
 
 h1 {
-  color: #1F1F1F;
+  color: black;
 }
 
 h2 {
-  color: #1F1F1F;
+  color: black;
+  font-size: 2em;
 }
 
 h3 {
   color: #A99984;
-  font-size: 2em;
+  font-size: 1.5em;
   justify-content: center;
   margin: 5px;
 }
@@ -94,6 +95,7 @@ header h2 {
 header {
   display: block;
   margin-top: 10px;
+  margin-bottom: 15px;
   background-image: url(images/fullSun.jpg);
   background-size: 700px;
   background-blend-mode: normal;
@@ -102,9 +104,32 @@ header {
   background-attachment: scroll;
 }
 
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+footer a {
+  padding: 3px;
+}
+
 .summary {
   font-size: 0.75em;
   text-align: center;
+}
+
+.summary p {
+  margin: 5px 15px 10px 10px;
+}
+
+.preamble {
+  margin: 5px 15px 10px 10px;
+  margin-top: 20px;
+}
+
+.participation, .requirements {
+  margin: 5px 15px 10px 10px;
 }
 
 .benefits {
@@ -115,7 +140,7 @@ header {
   padding-right: 0.75em;
   padding-bottom: 0.75em;
   padding-top: 0.1em;
-  color: #1F1F1F;
+  color: black;
 }
 
 .explanation {
@@ -132,7 +157,7 @@ header {
 }
 
 .benefits > h3 {
-  color: #1F1F1F;
+  color: black;
 }
 
 .design-selection {
@@ -151,10 +176,12 @@ header {
   grid-area: wrap;
   display: grid;
   grid-template-areas: "selection archives resources";
+  margin-bottom: 250px;
 }
 
 .wrapper > * {
   text-align: center;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
