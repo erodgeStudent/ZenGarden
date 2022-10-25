@@ -7,6 +7,7 @@
   list-style-type: none;
   display: none;
   background-color: $pop-up-background;
+  width: fit-content;
 }
 @mixin show-nav-options{
   display: block;
@@ -23,9 +24,8 @@
   list-style-type: none;
   display: block;
   a{
-    color: #555;
-  }
-}
+    color: black;
+}}
 @mixin divMargin{
   margin: 5px 15px 10px 10px;
 }

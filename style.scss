@@ -14,6 +14,23 @@ body {
   margin:0;
   padding:0;  
 }
+.page-wrapper{
+  display: grid;
+  grid-template-areas: 
+  'intro'
+  'sidebar'
+  'main'
+  ;
+}
+.intro{
+  grid-area: intro;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.main-supporting{
+  grid-area: main;
+}
 a{
   color: $link-font;
 }
@@ -47,7 +64,7 @@ header h2 {
 
 .design-selection:hover nav, .design-archives:hover nav{
   @include show-nav-options;
-  justify-content: center;  
+
 }
 .design-selection:hover nav li, .design-archives:hover nav li{
   @include style-li;
@@ -139,10 +156,16 @@ footer a{
 .wrapper{
   grid-area:wrap;
   display: grid;
+  margin-left: 15px;
   grid-template-areas: 'selection archives resources';
-  margin-bottom: 250px;
+  background-color: $wrapper-background;
 }
 .wrapper > *{
   text-align: center;
-  background-color: white;
+}
+.wrapper h3{
+  color: $sun-h3-font;
+  justify-content: center;
+  width:max-content;
+  font-size:medium;
 }

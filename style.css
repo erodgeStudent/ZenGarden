@@ -22,6 +22,23 @@ body {
   padding: 0;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-areas: "intro" "sidebar" "main";
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main-supporting {
+  grid-area: main;
+}
+
 a {
   color: #FAB943;
 }
@@ -59,6 +76,7 @@ header h2 {
   list-style-type: none;
   display: none;
   background-color: #DDD5CA;
+  width: fit-content;
 }
 
 .design-selection:hover nav, .design-archives:hover nav {
@@ -67,7 +85,6 @@ header h2 {
   top: 100%;
   cursor: pointer;
   width: fit-content;
-  justify-content: center;
 }
 
 .design-selection:hover nav li, .design-archives:hover nav li {
@@ -76,7 +93,7 @@ header h2 {
   justify-content: center;
 }
 .design-selection:hover nav li a, .design-archives:hover nav li a {
-  color: #555;
+  color: black;
 }
 
 .zen-resources:hover ul {
@@ -175,13 +192,20 @@ footer a {
 .wrapper {
   grid-area: wrap;
   display: grid;
+  margin-left: 15px;
   grid-template-areas: "selection archives resources";
-  margin-bottom: 250px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .wrapper > * {
   text-align: center;
-  background-color: white;
+}
+
+.wrapper h3 {
+  color: #A99984;
+  justify-content: center;
+  width: max-content;
+  font-size: medium;
 }
 
 /*# sourceMappingURL=style.css.map */
