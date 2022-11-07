@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"); /*list of atoms in html
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*list of atoms in html
 h1
 h2
 p
@@ -23,24 +24,38 @@ body {
 }
 
 .page-wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "intro" "sidebar" "main";
+      grid-template-areas: 'intro' 'sidebar' 'main';
 }
 
 .intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: intro;
 }
 
 .sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
 .main-supporting {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
 a {
   color: #FAB943;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+a:hover {
+  color: #96C5B0;
+  cursor: pointer;
 }
 
 p {
@@ -59,7 +74,9 @@ h2 {
 h3 {
   color: #A99984;
   font-size: 1.5em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 5px;
 }
 
@@ -76,36 +93,52 @@ header h2 {
   list-style-type: none;
   display: none;
   background-color: #DDD5CA;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav, .design-archives:hover nav {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav li, .design-archives:hover nav li {
   list-style-type: none;
   display: block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .design-selection:hover nav li a, .design-archives:hover nav li a {
   color: black;
 }
 
 .zen-resources:hover ul {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .zen-resources:hover ul a {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #555;
 }
 
@@ -122,8 +155,12 @@ header {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 5px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -133,7 +170,7 @@ footer a {
 }
 
 .summary {
-  font-size: 0.75em;
+  font-size: .75em;
   text-align: center;
 }
 
@@ -154,20 +191,20 @@ footer a {
   background-image: url(images/sunAndMountains.jpg);
   background-image: 100%;
   background-size: 100%;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
   color: black;
 }
 
 .explanation {
   background-image: url(images/nasa-Sun.jpg);
   background-size: 1000px;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
 }
 
 .explanation p {
@@ -179,23 +216,30 @@ footer a {
 }
 
 .design-selection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: selection;
 }
 
 .design-archives {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: archives;
 }
 
 .zen-resources {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: resources;
 }
 
 .wrapper {
   grid-area: wrap;
+  display: -ms-grid;
   display: grid;
   margin-left: 15px;
   margin-right: 15px;
-  grid-template-areas: "selection archives resources";
+      grid-template-areas: 'selection archives resources';
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -205,15 +249,21 @@ footer a {
 
 .wrapper h3 {
   color: #A99984;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   font-size: medium;
 }
 
 .requirements p:last-of-type {
   margin-top: 30px;
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
 }
 
+/* Medium/Tablet size screen */
+/* Large/Desktop size screen */
 /*# sourceMappingURL=style.css.map */
