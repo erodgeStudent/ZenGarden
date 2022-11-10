@@ -267,8 +267,10 @@ footer a {
 /* Medium/Tablet size screen */
 @media only screen and (min-width: 700px) {
   div.preamble::before {
-    content: url(Images/solarsystem1.jpeg)
+    content: url(Images/solarsystem1.jpeg);
+    margin-left: 15%;
   }
+
 }
 
 /* Large/Desktop size screen */
