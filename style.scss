@@ -37,7 +37,7 @@ a{
 }
 
 a:hover {
-  color: $galaxy-p-background2;
+  color: $galaxy-p-background3;
   cursor: pointer;
 }
 p{
@@ -198,6 +198,8 @@ footer a{
 
 @media only screen and (min-width: 901px) {
 
-
+  h1 {
+    grid-column: 1 / span 3;
+  }
 
 }

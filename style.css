@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-  color: #96C5B0;
+  color: #F5E214;
   cursor: pointer;
 }
 
@@ -266,4 +266,11 @@ footer a {
 
 /* Medium/Tablet size screen */
 /* Large/Desktop size screen */
+@media only screen and (min-width: 901px) {
+  h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+  }
+}
 /*# sourceMappingURL=style.css.map */
