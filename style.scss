@@ -186,8 +186,10 @@ footer a{
 
 /* Medium/Tablet size screen */
 
-@media only screen and (max-width: 900px) {
-
+@media only screen and (min-width: 600px) {
+  h1 {
+    color: purple;
+  }
  
 
 }
@@ -199,7 +201,7 @@ footer a{
 @media only screen and (min-width: 901px) {
 
   h1 {
-    grid-column: 1 / span 3;
+    color: red;
   }
 
 }
