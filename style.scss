@@ -225,6 +225,13 @@ footer a{
     grid-area: main;
     background-image: none;
   }
+  .explanation{
+    background-image: none;
+  }
+  .benefits{
+    background-image: none;
+    color: white;
+  }
   .intro header{
     display:grid;
     grid-template-areas: "h1 h2 h2 h2";
