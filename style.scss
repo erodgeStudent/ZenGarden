@@ -190,6 +190,47 @@ footer a{
   h1 {
     color: purple;
   }
+  .page-wrapper{
+    display:grid;
+    grid-template-areas: "intro intro intro"
+                          "sidebar main main"
+                          "sidebar main main"
+                          "sidebar main main";
+  }
+  .intro{
+    grid-area: intro;
+    display: grid;
+    grid-template-areas: "header header header"
+                          ". summary summary"
+                          ". preamble preamble";
+  }
+  .summary{
+    grid-area: summary;
+  }
+  .preamble{
+    grid-area: preamble;
+  }
+
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .main-supporting{
+    grid-area: main;
+  }
+  .intro header{
+    display:grid;
+    grid-template-areas: "h1 h2 h2 h2";
+    background-image: none;
+    grid-area: header;
+  }
+  .intro header h1{
+    grid-area: h1;
+    font-size: xx-large;
+  }
+  .intro header h2{
+    grid-area: h2;
+    color: white;
+  }
  
 
 }
