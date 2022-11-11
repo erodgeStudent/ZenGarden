@@ -33,6 +33,12 @@ body {
 }
 a{
   color: $link-font;
+  transition-duration: 500ms;
+}
+
+a:hover {
+  color: $galaxy-p-background3;
+  cursor: pointer;
 }
 p{
   margin: 5px;
@@ -176,4 +182,26 @@ footer a{
   margin-top: 30px;
   font-size: .8em;
   text-align: center;
+}
+
+/* Medium/Tablet size screen */
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    color: purple;
+  }
+ 
+
+}
+
+
+
+/* Large/Desktop size screen */
+
+@media only screen and (min-width: 901px) {
+
+  h1 {
+    color: red;
+  }
+
 }
