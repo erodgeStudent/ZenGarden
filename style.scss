@@ -190,6 +190,11 @@ footer a{
   h1 {
     color: purple;
   }
+  body{
+    background-image: url(/Images/solarsystem1.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   .page-wrapper{
     display:grid;
     grid-template-areas: "intro intro intro"
@@ -209,13 +214,16 @@ footer a{
   }
   .preamble{
     grid-area: preamble;
+    justify-content: end;
   }
 
   .sidebar{
     grid-area: sidebar;
+    display: block;
   }
   .main-supporting{
     grid-area: main;
+    background-image: none;
   }
   .intro header{
     display:grid;
@@ -230,6 +238,13 @@ footer a{
   .intro header h2{
     grid-area: h2;
     color: white;
+  }
+  .design-selection nav, .design-archives nav, .zen-resources ul{
+    display: block;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
   }
  
 
