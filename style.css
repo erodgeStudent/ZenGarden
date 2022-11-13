@@ -224,13 +224,16 @@ footer a {
 
 /* Medium/Tablet size screen */
 @media only screen and (min-width: 600px) {
-  h1 {
+  h1 h2 h3 {
     color: purple;
   }
   body {
     background-image: url(/Images/solarsystem1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  body a {
+    color: rgb(128, 0, 128);
   }
   .page-wrapper {
     display: grid;
@@ -243,35 +246,57 @@ footer a {
   }
   .summary {
     grid-area: summary;
+    align-content: end;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    width: 50%;
+    justify-self: end;
+    margin-right: 8%;
   }
   .preamble {
     grid-area: preamble;
     justify-content: end;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .sidebar {
     grid-area: sidebar;
     display: block;
+    height: fit-content;
+  }
+  .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-self: center;
   }
   .main-supporting {
     grid-area: main;
     background-image: none;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .explanation {
     background-image: none;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .requirements {
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .benefits {
     background-image: none;
     color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .participation {
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .intro header {
     display: grid;
-    grid-template-areas: "h1 h2 h2 h2";
+    grid-template-areas: "h1 . h2 h2";
     background-image: none;
     grid-area: header;
   }
   .intro header h1 {
     grid-area: h1;
-    font-size: xx-large;
+    font-size: x-large;
+    color: rgb(128, 0, 128);
   }
   .intro header h2 {
     grid-area: h2;
@@ -283,12 +308,51 @@ footer a {
   .wrapper {
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 /* Large/Desktop size screen */
 @media only screen and (min-width: 901px) {
+  body {
+    background-image: none;
+  }
   h1 {
     color: red;
+  }
+  .preamble {
+    width: 78%;
+    justify-self: right;
+  }
+  .preamble h3 {
+    text-align: center;
+  }
+  .intro header {
+    justify-self: left;
+    margin-left: 30%;
+  }
+  .summary {
+    width: 95%;
+    justify-self: center;
+    text-align: center;
+  }
+  #zen-supporting {
+    display: grid;
+    grid-template-areas: "explanation participation" "explanation participation" ". benefits" "requirements requirements" "footer footer";
+  }
+  .explanation {
+    grid-area: explanation;
+  }
+  .participation {
+    grid-area: participation;
+  }
+  .benefits {
+    grid-area: benefits;
+  }
+  .requirements {
+    grid-area: requirements;
+  }
+  footer {
+    grid-area: footer;
   }
 }
 
