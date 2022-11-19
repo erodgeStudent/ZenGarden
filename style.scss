@@ -168,9 +168,9 @@ footer a{
   grid-template-areas: 'selection archives resources';
   background-color: $wrapper-background;
 }
-.wrapper > *{
-  text-align: center;
-}
+// .wrapper > *{
+//   text-align: center;
+// }
 .wrapper h3{
   color: $sun-h3-font;
   justify-content: center;
@@ -232,6 +232,9 @@ footer a{
     display: block;
     
     height: fit-content;
+  }
+.design-selection nav ul, .design-archives nav ul {
+    list-style-type: none;
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav{
     background-color: $p-planet-background;

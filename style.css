@@ -205,10 +205,6 @@ footer a {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.wrapper > * {
-  text-align: center;
-}
-
 .wrapper h3 {
   color: #A99984;
   justify-content: center;
@@ -233,7 +229,7 @@ footer a {
     background-attachment: fixed;
   }
   body a {
-    color: rgb(128, 0, 128);
+    color: rgb(224, 142, 224);
   }
   .page-wrapper {
     display: grid;
@@ -262,6 +258,9 @@ footer a {
     grid-area: sidebar;
     display: block;
     height: fit-content;
+  }
+  .design-selection nav ul, .design-archives nav ul {
+    list-style-type: none;
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav {
     background-color: rgba(0, 0, 0, 0.3);
