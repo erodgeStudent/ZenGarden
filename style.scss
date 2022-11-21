@@ -194,6 +194,9 @@ footer a{
     background-image: url(/Images/solarsystem1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
   }
   body a{
     color: $planet-link;
@@ -212,6 +215,8 @@ footer a{
                           ". summary summary"
                           ". preamble preamble";
   }
+
+  /* Snippet below page title */
   .summary{
     grid-area: summary;
     align-content: end;
@@ -219,9 +224,11 @@ footer a{
     text-align: right;
     width: 50%;
     justify-self: end;
-    margin-right: 8%;
   }
+
+  /* The Road to Enlightenment */
   .preamble{
+
     grid-area: preamble;
     justify-content: end;
     background-color: $p-planet-background;
@@ -230,21 +237,29 @@ footer a{
   .sidebar{
     grid-area: sidebar;
     display: block;
-    
     height: fit-content;
+  }
+
+  .zen-resources ul li{
+    margin-left: 15px;
   }
 .design-selection nav ul, .design-archives nav ul {
     list-style-type: none;
+    padding-left: 15px;
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav{
     background-color: $p-planet-background;
     justify-self:center;
   }
+
+  /* Includes "So What Is This About?", "Participation", "Benefits". "Requirements" */
   .main-supporting{
     grid-area: main;
     background-image: none;
     background-color: $p-planet-background;
   }
+
+  /* So What Is This About? */
   .explanation{
     background-image: none;
     background-color: $p-planet-background;
@@ -293,10 +308,10 @@ footer a{
 /* Large/Desktop size screen */
 
 @media only screen and (min-width: 901px) {
-  body{background-image: none;}
-  h1 {
-    color: red;
+  body {
+    background-image: none;
   }
+
   .preamble{
     width: 78%;
     justify-self: right;
@@ -317,12 +332,19 @@ footer a{
     display: grid;
     grid-template-areas: "explanation participation"
                           "explanation participation"
-                          ". benefits"
+                          "explanation benefits"
                           "requirements requirements"
                           "footer footer";
   }
+
+  /* So What Is this About? */
   .explanation{
     grid-area: explanation;
+    background-image: url(/Images/solarsystem3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 80%;
   }
   .participation{
     grid-area: participation;

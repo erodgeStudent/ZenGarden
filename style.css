@@ -269,6 +269,9 @@ footer a {
     background-image: url(/Images/solarsystem1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
   }
   body a {
     color: #e08ee0;
@@ -287,6 +290,7 @@ footer a {
     display: grid;
         grid-template-areas: "header header header" ". summary summary" ". preamble preamble";
   }
+  /* Snippet below page title */
   .summary {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -299,8 +303,8 @@ footer a {
     width: 50%;
     -ms-grid-column-align: end;
         justify-self: end;
-    margin-right: 8%;
   }
+  /* The Road to Enlightenment */
   .preamble {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
@@ -321,14 +325,19 @@ footer a {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .zen-resources ul li {
+    margin-left: 15px;
+  }
   .design-selection nav ul, .design-archives nav ul {
     list-style-type: none;
+    padding-left: 15px;
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav {
     background-color: rgba(0, 0, 0, 0.6);
     -ms-grid-column-align: center;
         justify-self: center;
   }
+  /* Includes "So What Is This About?", "Participation", "Benefits". "Requirements" */
   .main-supporting {
     -ms-grid-row: 2;
     -ms-grid-row-span: 3;
@@ -338,6 +347,7 @@ footer a {
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
   }
+  /* So What Is This About? */
   .explanation {
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -397,9 +407,6 @@ footer a {
   body {
     background-image: none;
   }
-  h1 {
-    color: red;
-  }
   .preamble {
     width: 78%;
     -ms-grid-column-align: right;
@@ -422,13 +429,19 @@ footer a {
   #zen-supporting {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "explanation participation" "explanation participation" ". benefits" "requirements requirements" "footer footer";
+        grid-template-areas: "explanation participation" "explanation participation" "explanation benefits" "requirements requirements" "footer footer";
   }
+  /* So What Is this About? */
   .explanation {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: explanation;
+    background-image: url(/Images/solarsystem3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 80%;
   }
   .participation {
     -ms-grid-row: 1;
