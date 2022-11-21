@@ -405,7 +405,7 @@ footer a {
 /* Large/Desktop size screen */
 @media only screen and (min-width: 901px) {
   body {
-    background-image: none;
+    background-image: url(Images/shutterstock-306306104.webp);
   }
   .preamble {
     width: 78%;
@@ -437,11 +437,10 @@ footer a {
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: explanation;
-    background-image: url(/Images/solarsystem3.jpg);
+    background-image: url(/Images/stars.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 80%;
   }
   .participation {
     -ms-grid-row: 1;

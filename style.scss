@@ -309,7 +309,7 @@ footer a{
 
 @media only screen and (min-width: 901px) {
   body {
-    background-image: none;
+    background-image: url(Images/shutterstock-306306104.webp);
   }
 
   .preamble{
@@ -340,12 +340,12 @@ footer a{
   /* So What Is this About? */
   .explanation{
     grid-area: explanation;
-    background-image: url(/Images/solarsystem3.jpg);
+    background-image: url(/Images/stars.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: 80%;
   }
+
   .participation{
     grid-area: participation;
   }
