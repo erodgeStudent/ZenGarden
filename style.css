@@ -212,7 +212,7 @@ footer a {
 }
 
 .benefits > h3 {
-  color: black;
+  color: #A99984;
 }
 
 .design-selection {
@@ -389,6 +389,7 @@ footer a {
   }
   .design-selection nav, .design-archives nav, .zen-resources ul {
     display: block;
+    padding-bottom: 15px;
   }
   .wrapper {
     display: -webkit-box;
@@ -403,7 +404,7 @@ footer a {
 }
 
 /* Large/Desktop size screen */
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1000px) {
   body {
     background-image: url(Images/shutterstock-306306104.webp);
   }
@@ -414,6 +415,10 @@ footer a {
   }
   .preamble h3 {
     text-align: center;
+  }
+  #zen-preamble.preamble {
+    padding-left: 15px;
+    padding-bottom: 15px;
   }
   .intro header {
     -ms-grid-column-align: left;
@@ -448,6 +453,10 @@ footer a {
     -ms-grid-column: 2;
     grid-area: participation;
   }
+  #zen-participation.participation {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
   .benefits {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
@@ -458,6 +467,9 @@ footer a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: requirements;
+  }
+  #zen-requirements.requirements {
+    padding-left: 15px;
   }
   footer {
     -ms-grid-row: 5;

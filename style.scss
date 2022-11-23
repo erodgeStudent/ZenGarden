@@ -149,7 +149,7 @@ footer a{
 }
 
 .benefits > h3 {
-  color: $sun-background-color;
+  color: $sun-h3-font;
 }
 .design-selection{
   grid-area: selection;
@@ -293,6 +293,7 @@ footer a{
   }
   .design-selection nav, .design-archives nav, .zen-resources ul{
     display: block;
+    padding-bottom: 15px;
   }
   .wrapper{
     display: flex;
@@ -307,7 +308,7 @@ footer a{
 
 /* Large/Desktop size screen */
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1000px) {
   body {
     background-image: url(Images/shutterstock-306306104.webp);
   }
@@ -318,6 +319,11 @@ footer a{
     h3{
       text-align: center;
     }
+  }
+
+  #zen-preamble.preamble {
+    padding-left: 15px;
+    padding-bottom: 15px;
   }
   .intro header{
     justify-self: left;
@@ -349,11 +355,20 @@ footer a{
   .participation{
     grid-area: participation;
   }
+
+  #zen-participation.participation {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
   .benefits{
     grid-area: benefits;
   }
   .requirements{
     grid-area: requirements;
+  }
+
+  #zen-requirements.requirements {
+    padding-left: 15px;
   }
   footer{
     grid-area: footer;
