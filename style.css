@@ -276,6 +276,10 @@ footer a {
   body a {
     color: #e08ee0;
   }
+  #design-selection a.designer-name:hover,
+  #design-selection a.design-name:hover {
+    color: purple;
+  }
   .page-wrapper {
     display: -ms-grid;
     display: grid;
@@ -442,7 +446,7 @@ footer a {
     -ms-grid-row-span: 3;
     -ms-grid-column: 1;
     grid-area: explanation;
-    background-image: url(/Images/stars.jpg);
+    background-image: url(/Images/stocksolarsystem_cropped.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
