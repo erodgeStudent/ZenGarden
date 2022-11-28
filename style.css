@@ -236,6 +236,9 @@ footer a {
   }
   #design-selection a.designer-name:hover,
 #design-selection a.design-name:hover {
+    color: #F5E214;
+  }
+  .design-selection:hover nav li a, .design-archives:hover nav li a {
     color: rgb(224, 142, 224);
   }
   .page-wrapper {

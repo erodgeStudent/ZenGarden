@@ -204,10 +204,14 @@ footer a{
 
   #design-selection a.designer-name:hover, 
   #design-selection a.design-name:hover {
-    color: $planet-h1;
+    color: $galaxy-p-background3;
   }
 
-  
+  .design-selection:hover nav li, .design-archives:hover nav li{
+    a{
+      color: $planet-link;
+  }
+  }
 
   .page-wrapper{
     display:grid;
