@@ -241,6 +241,18 @@ footer a {
   .design-selection:hover nav li a, .design-archives:hover nav li a {
     color: rgb(224, 142, 224);
   }
+  #design-archives li.next a:hover, #design-archives li.viewall a:hover {
+    color: #F5E214;
+  }
+  #zen-resources ul:hover {
+    color: rgb(224, 142, 224);
+  }
+  #zen-resources li a:hover {
+    color: #F5E214;
+  }
+  .zen-resources:hover ul a {
+    color: rgb(224, 142, 224);
+  }
   .page-wrapper {
     display: grid;
     grid-template-areas: "intro intro intro" "sidebar main main" "sidebar main main" "sidebar main main";

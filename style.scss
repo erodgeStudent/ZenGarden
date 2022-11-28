@@ -212,6 +212,20 @@ footer a{
       color: $planet-link;
   }
   }
+  #design-archives li.next a:hover, #design-archives li.viewall a:hover{
+    color: $galaxy-p-background3;
+  }
+  #zen-resources ul:hover{
+    color:$planet-link;
+  }
+  #zen-resources li a:hover{
+    color:$galaxy-p-background3;
+  }
+  .zen-resources:hover ul{
+    a{
+      color: $planet-link;
+    }
+  }
 
   .page-wrapper{
     display:grid;
