@@ -188,7 +188,7 @@ footer a{
 
 @media only screen and (min-width: 600px) {
   h1 h2 h3{
-    color: purple;
+    color: $planet-link;
   }
   body{
     background-image: url(/Images/solarsystem1.jpeg);
@@ -230,7 +230,7 @@ footer a{
     align-content: end;
     background-color: $p-planet-background;
     text-align: right;
-    width: 50%;
+    margin-left: 8.5%;
     justify-self: end;
   }
 
@@ -271,17 +271,22 @@ footer a{
   .explanation{
     background-image: none;
     background-color: $p-planet-background;
+    margin: 0px 5px 0px 0px;
   }
   .requirements{
     background-color: $p-planet-background;
+    width: 100%;
+    margin: 5px 30px 5px 0px;
   }
   .benefits{
     background-image: none;
     color: white;
     background-color: $p-planet-background;
+    margin: 5px 0px 0px 5px;
   }
   .participation{
     background-color: $p-planet-background;
+    margin: 0px 0px 5px 5px;
   }
   .intro header{
     display:grid;
@@ -322,7 +327,7 @@ footer a{
   }
 
   .preamble{
-    width: 78%;
+    width: 76.5%;
     justify-self: right;
     h3{
       text-align: center;
@@ -338,7 +343,7 @@ footer a{
     margin-left: 30%;
   }
   .summary{
-    width: 95%;
+    width:65%;
     justify-self: center;
     text-align: center;
   }
