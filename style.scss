@@ -283,6 +283,7 @@ footer a{
     text-align: right;
     content: "Show Menu";
     margin: 10px;
+    background-color: $p-planet-background;
   }
   .sidebar:hover::after{
     color:red;
