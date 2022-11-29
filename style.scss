@@ -433,6 +433,13 @@ footer a{
   .sidebar:after{
     content: none;
   }
+  .sidebar:hover{
+    color:white;
+    .wrapper{
+      position: relative;
+    left:0px;
+    }
+  }
   .wrapper{
     position: relative;
     left:0px;

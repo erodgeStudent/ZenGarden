@@ -427,6 +427,13 @@ footer a {
   .sidebar:after {
     content: none;
   }
+  .sidebar:hover {
+    color: white;
+  }
+  .sidebar:hover .wrapper {
+    position: relative;
+    left: 0px;
+  }
   .wrapper {
     position: relative;
     left: 0px;
