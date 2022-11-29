@@ -270,6 +270,7 @@ footer a{
     margin-left: 15px;
   }
 .design-selection nav ul, .design-archives nav ul {
+
     list-style-type: none;
     padding-left: 15px;
   }
@@ -277,6 +278,33 @@ footer a{
     background-color: $p-planet-background;
     justify-self:center;
   }
+  /*add button before wrapper*/
+  .sidebar:after{
+    text-align: right;
+    content: "Show Menu";
+    margin: 10px;
+  }
+  .sidebar:hover::after{
+    color:red;
+  }
+  .sidebar:hover{
+    color:white;
+    .wrapper{
+      position: absolute;
+      transition: .5s;
+      left:0px;
+    }
+  }
+  .sidebar{
+    overflow: hidden;
+  }
+  .wrapper{
+    position: absolute;
+    top:53%;
+    left:-350px;
+  }
+
+
 
   /* Includes "So What Is This About?", "Participation", "Benefits". "Requirements" */
   .main-supporting{
@@ -400,6 +428,14 @@ footer a{
 
   #zen-requirements.requirements {
     padding-left: 15px;
+  }
+  /*delete 'Menu' button*/
+  .sidebar:after{
+    content: none;
+  }
+  .wrapper{
+    position: relative;
+    left:0px;
   }
   footer{
     grid-area: footer;
