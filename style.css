@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"); /*list of atoms in html
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*list of atoms in html
 h1
 h2
 p
@@ -23,25 +24,33 @@ body {
 }
 
 .page-wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "intro" "sidebar" "main";
+      grid-template-areas: 'intro' 'sidebar' 'main';
 }
 
 .intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: intro;
 }
 
 .sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
 .main-supporting {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
 a {
   color: #FAB943;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 a:hover {
@@ -65,7 +74,9 @@ h2 {
 h3 {
   color: #A99984;
   font-size: 1.5em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 5px;
 }
 
@@ -82,36 +93,52 @@ header h2 {
   list-style-type: none;
   display: none;
   background-color: #DDD5CA;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav, .design-archives:hover nav {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav li, .design-archives:hover nav li {
   list-style-type: none;
   display: block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .design-selection:hover nav li a, .design-archives:hover nav li a {
   color: black;
 }
 
 .zen-resources:hover ul {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .zen-resources:hover ul a {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #555;
 }
 
@@ -128,8 +155,12 @@ header {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 5px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -139,7 +170,7 @@ footer a {
 }
 
 .summary {
-  font-size: 0.75em;
+  font-size: .75em;
   text-align: center;
 }
 
@@ -160,20 +191,20 @@ footer a {
   background-image: url(images/sunAndMountains.jpg);
   background-image: 100%;
   background-size: 100%;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
   color: black;
 }
 
 .explanation {
   background-image: url(images/nasa-Sun.jpg);
   background-size: 1000px;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
 }
 
 .explanation p {
@@ -185,43 +216,54 @@ footer a {
 }
 
 .design-selection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: selection;
 }
 
 .design-archives {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: archives;
 }
 
 .zen-resources {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: resources;
 }
 
 .wrapper {
   grid-area: wrap;
+  display: -ms-grid;
   display: grid;
   margin-left: 15px;
   margin-right: 15px;
-  grid-template-areas: "selection archives resources";
+      grid-template-areas: 'selection archives resources';
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .wrapper h3 {
   color: #A99984;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   font-size: medium;
 }
 
 .requirements p:last-of-type {
   margin-top: 30px;
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
 }
 
 /* Medium/Tablet size screen */
 @media only screen and (min-width: 600px) {
   h1 h2 h3 {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   body {
     background-image: url(/Images/solarsystem1.jpeg);
@@ -232,54 +274,74 @@ footer a {
     margin-top: 2rem;
   }
   body a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #design-selection a.designer-name:hover,
-#design-selection a.design-name:hover {
+  #design-selection a.design-name:hover {
     color: #F5E214;
   }
   .design-selection:hover nav li a, .design-archives:hover nav li a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #design-archives li.next a:hover, #design-archives li.viewall a:hover {
     color: #F5E214;
   }
   #zen-resources ul:hover {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #zen-resources li a:hover {
     color: #F5E214;
   }
   .zen-resources:hover ul a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "intro intro intro" "sidebar main main" "sidebar main main" "sidebar main main";
+        grid-template-areas: "intro intro intro" "sidebar main main" "sidebar main main" "sidebar main main";
   }
   .intro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: intro;
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "header header header" ". summary summary" ". preamble preamble";
+        grid-template-areas: "header header header" ". summary summary" ". preamble preamble";
   }
   /* Snippet below page title */
   .summary {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: summary;
-    align-content: end;
+    -ms-flex-line-pack: end;
+        align-content: end;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: right;
     margin-left: 8.5%;
-    justify-self: end;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
   /* The Road to Enlightenment */
   .preamble {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: preamble;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     background-color: rgba(0, 0, 0, 0.6);
   }
   .sidebar {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
     grid-area: sidebar;
     display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .zen-resources ul li {
@@ -291,7 +353,8 @@ footer a {
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav {
     background-color: rgba(0, 0, 0, 0.6);
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   /*add button before wrapper*/
   .sidebar:after {
@@ -308,7 +371,8 @@ footer a {
   }
   .sidebar:hover .wrapper {
     position: absolute;
-    transition: 0.5s;
+    -webkit-transition: .5s;
+    transition: .5s;
     left: 0px;
   }
   .sidebar {
@@ -321,6 +385,10 @@ footer a {
   }
   /* Includes "So What Is This About?", "Participation", "Benefits". "Requirements" */
   .main-supporting {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: main;
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -347,17 +415,440 @@ footer a {
     margin: 0px 0px 5px 5px;
   }
   .intro header {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "h1 . h2 h2";
+        grid-template-areas: "h1 . h2 h2";
     background-image: none;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: header;
   }
   .intro header h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h1;
     font-size: x-large;
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
+    -webkit-animation: orbit 8s linear infinite;
+            animation: orbit 8s linear infinite;
+  }
+  @-webkit-keyframes orbit {
+    0% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
+    2% {
+      -webkit-transform: translate(10%, 50%);
+              transform: translate(10%, 50%);
+    }
+    4% {
+      -webkit-transform: translate(20%, 52%);
+              transform: translate(20%, 52%);
+    }
+    6% {
+      -webkit-transform: translate(30%, 54%);
+              transform: translate(30%, 54%);
+    }
+    8% {
+      -webkit-transform: translate(40%, 57%);
+              transform: translate(40%, 57%);
+    }
+    10% {
+      -webkit-transform: translate(50%, 60%);
+              transform: translate(50%, 60%);
+    }
+    12% {
+      -webkit-transform: translate(60%, 64%);
+              transform: translate(60%, 64%);
+    }
+    14% {
+      -webkit-transform: translate(70%, 68%);
+              transform: translate(70%, 68%);
+    }
+    16% {
+      -webkit-transform: translate(80%, 72%);
+              transform: translate(80%, 72%);
+    }
+    18% {
+      -webkit-transform: translate(90%, 76%);
+              transform: translate(90%, 76%);
+    }
+    20% {
+      -webkit-transform: translate(100%, 81%);
+              transform: translate(100%, 81%);
+    }
+    22% {
+      -webkit-transform: translate(110%, 85%);
+              transform: translate(110%, 85%);
+    }
+    24% {
+      -webkit-transform: translate(120%, 89%);
+              transform: translate(120%, 89%);
+    }
+    26% {
+      -webkit-transform: translate(130%, 92%);
+              transform: translate(130%, 92%);
+    }
+    28% {
+      -webkit-transform: translate(140%, 95%);
+              transform: translate(140%, 95%);
+    }
+    30% {
+      -webkit-transform: translate(150%, 98%);
+              transform: translate(150%, 98%);
+    }
+    32% {
+      -webkit-transform: translate(160%, 100%);
+              transform: translate(160%, 100%);
+    }
+    34% {
+      -webkit-transform: translate(170%, 98%);
+              transform: translate(170%, 98%);
+    }
+    36% {
+      -webkit-transform: translate(180%, 95%);
+              transform: translate(180%, 95%);
+    }
+    38% {
+      -webkit-transform: translate(190%, 92%);
+              transform: translate(190%, 92%);
+    }
+    40% {
+      -webkit-transform: translate(200%, 89%);
+              transform: translate(200%, 89%);
+    }
+    42% {
+      -webkit-transform: translate(210%, 85%);
+              transform: translate(210%, 85%);
+    }
+    44% {
+      -webkit-transform: translate(220%, 81%);
+              transform: translate(220%, 81%);
+    }
+    46% {
+      -webkit-transform: translate(230%, 76%);
+              transform: translate(230%, 76%);
+    }
+    48% {
+      -webkit-transform: translate(240%, 72%);
+              transform: translate(240%, 72%);
+    }
+    50% {
+      -webkit-transform: translate(250%, 68%);
+              transform: translate(250%, 68%);
+    }
+    52% {
+      -webkit-transform: translate(260%, 64%);
+              transform: translate(260%, 64%);
+    }
+    54% {
+      -webkit-transform: translate(270%, 61%);
+              transform: translate(270%, 61%);
+    }
+    56% {
+      -webkit-transform: translate(280%, 58%);
+              transform: translate(280%, 58%);
+    }
+    58% {
+      -webkit-transform: translate(290%, 55%);
+              transform: translate(290%, 55%);
+    }
+    60% {
+      -webkit-transform: translate(300%, 51%);
+              transform: translate(300%, 51%);
+    }
+    62% {
+      -webkit-transform: translate(310%, 48%);
+              transform: translate(310%, 48%);
+    }
+    64% {
+      -webkit-transform: translate(320%, 0%);
+              transform: translate(320%, 0%);
+    }
+    66% {
+      -webkit-transform: translate(310%, 0%);
+              transform: translate(310%, 0%);
+    }
+    68% {
+      -webkit-transform: translate(300%, 0%);
+              transform: translate(300%, 0%);
+    }
+    70% {
+      -webkit-transform: translate(280%, 0%);
+              transform: translate(280%, 0%);
+    }
+    72% {
+      -webkit-transform: translate(260%, 0%);
+              transform: translate(260%, 0%);
+    }
+    74% {
+      -webkit-transform: translate(240%, 0%);
+              transform: translate(240%, 0%);
+    }
+    76% {
+      -webkit-transform: translate(220%, 0%);
+              transform: translate(220%, 0%);
+    }
+    78% {
+      -webkit-transform: translate(200%, 0%);
+              transform: translate(200%, 0%);
+    }
+    80% {
+      -webkit-transform: translate(180%, 0%);
+              transform: translate(180%, 0%);
+    }
+    82% {
+      -webkit-transform: translate(160%, 0%);
+              transform: translate(160%, 0%);
+    }
+    84% {
+      -webkit-transform: translate(140%, 0%);
+              transform: translate(140%, 0%);
+    }
+    86% {
+      -webkit-transform: translate(120%, 0%);
+              transform: translate(120%, 0%);
+    }
+    88% {
+      -webkit-transform: translate(100%, 0%);
+              transform: translate(100%, 0%);
+    }
+    90% {
+      -webkit-transform: translate(80%, 0%);
+              transform: translate(80%, 0%);
+    }
+    92% {
+      -webkit-transform: translate(60%, 0%);
+              transform: translate(60%, 0%);
+    }
+    94% {
+      -webkit-transform: translate(40%, 0%);
+              transform: translate(40%, 0%);
+    }
+    96% {
+      -webkit-transform: translate(20%, 0%);
+              transform: translate(20%, 0%);
+    }
+    98% {
+      -webkit-transform: translate(10%, 0%);
+              transform: translate(10%, 0%);
+    }
+    100% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
+  }
+  @keyframes orbit {
+    0% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
+    2% {
+      -webkit-transform: translate(10%, 50%);
+              transform: translate(10%, 50%);
+    }
+    4% {
+      -webkit-transform: translate(20%, 52%);
+              transform: translate(20%, 52%);
+    }
+    6% {
+      -webkit-transform: translate(30%, 54%);
+              transform: translate(30%, 54%);
+    }
+    8% {
+      -webkit-transform: translate(40%, 57%);
+              transform: translate(40%, 57%);
+    }
+    10% {
+      -webkit-transform: translate(50%, 60%);
+              transform: translate(50%, 60%);
+    }
+    12% {
+      -webkit-transform: translate(60%, 64%);
+              transform: translate(60%, 64%);
+    }
+    14% {
+      -webkit-transform: translate(70%, 68%);
+              transform: translate(70%, 68%);
+    }
+    16% {
+      -webkit-transform: translate(80%, 72%);
+              transform: translate(80%, 72%);
+    }
+    18% {
+      -webkit-transform: translate(90%, 76%);
+              transform: translate(90%, 76%);
+    }
+    20% {
+      -webkit-transform: translate(100%, 81%);
+              transform: translate(100%, 81%);
+    }
+    22% {
+      -webkit-transform: translate(110%, 85%);
+              transform: translate(110%, 85%);
+    }
+    24% {
+      -webkit-transform: translate(120%, 89%);
+              transform: translate(120%, 89%);
+    }
+    26% {
+      -webkit-transform: translate(130%, 92%);
+              transform: translate(130%, 92%);
+    }
+    28% {
+      -webkit-transform: translate(140%, 95%);
+              transform: translate(140%, 95%);
+    }
+    30% {
+      -webkit-transform: translate(150%, 98%);
+              transform: translate(150%, 98%);
+    }
+    32% {
+      -webkit-transform: translate(160%, 100%);
+              transform: translate(160%, 100%);
+    }
+    34% {
+      -webkit-transform: translate(170%, 98%);
+              transform: translate(170%, 98%);
+    }
+    36% {
+      -webkit-transform: translate(180%, 95%);
+              transform: translate(180%, 95%);
+    }
+    38% {
+      -webkit-transform: translate(190%, 92%);
+              transform: translate(190%, 92%);
+    }
+    40% {
+      -webkit-transform: translate(200%, 89%);
+              transform: translate(200%, 89%);
+    }
+    42% {
+      -webkit-transform: translate(210%, 85%);
+              transform: translate(210%, 85%);
+    }
+    44% {
+      -webkit-transform: translate(220%, 81%);
+              transform: translate(220%, 81%);
+    }
+    46% {
+      -webkit-transform: translate(230%, 76%);
+              transform: translate(230%, 76%);
+    }
+    48% {
+      -webkit-transform: translate(240%, 72%);
+              transform: translate(240%, 72%);
+    }
+    50% {
+      -webkit-transform: translate(250%, 68%);
+              transform: translate(250%, 68%);
+    }
+    52% {
+      -webkit-transform: translate(260%, 64%);
+              transform: translate(260%, 64%);
+    }
+    54% {
+      -webkit-transform: translate(270%, 61%);
+              transform: translate(270%, 61%);
+    }
+    56% {
+      -webkit-transform: translate(280%, 58%);
+              transform: translate(280%, 58%);
+    }
+    58% {
+      -webkit-transform: translate(290%, 55%);
+              transform: translate(290%, 55%);
+    }
+    60% {
+      -webkit-transform: translate(300%, 51%);
+              transform: translate(300%, 51%);
+    }
+    62% {
+      -webkit-transform: translate(310%, 48%);
+              transform: translate(310%, 48%);
+    }
+    64% {
+      -webkit-transform: translate(320%, 0%);
+              transform: translate(320%, 0%);
+    }
+    66% {
+      -webkit-transform: translate(310%, 0%);
+              transform: translate(310%, 0%);
+    }
+    68% {
+      -webkit-transform: translate(300%, 0%);
+              transform: translate(300%, 0%);
+    }
+    70% {
+      -webkit-transform: translate(280%, 0%);
+              transform: translate(280%, 0%);
+    }
+    72% {
+      -webkit-transform: translate(260%, 0%);
+              transform: translate(260%, 0%);
+    }
+    74% {
+      -webkit-transform: translate(240%, 0%);
+              transform: translate(240%, 0%);
+    }
+    76% {
+      -webkit-transform: translate(220%, 0%);
+              transform: translate(220%, 0%);
+    }
+    78% {
+      -webkit-transform: translate(200%, 0%);
+              transform: translate(200%, 0%);
+    }
+    80% {
+      -webkit-transform: translate(180%, 0%);
+              transform: translate(180%, 0%);
+    }
+    82% {
+      -webkit-transform: translate(160%, 0%);
+              transform: translate(160%, 0%);
+    }
+    84% {
+      -webkit-transform: translate(140%, 0%);
+              transform: translate(140%, 0%);
+    }
+    86% {
+      -webkit-transform: translate(120%, 0%);
+              transform: translate(120%, 0%);
+    }
+    88% {
+      -webkit-transform: translate(100%, 0%);
+              transform: translate(100%, 0%);
+    }
+    90% {
+      -webkit-transform: translate(80%, 0%);
+              transform: translate(80%, 0%);
+    }
+    92% {
+      -webkit-transform: translate(60%, 0%);
+              transform: translate(60%, 0%);
+    }
+    94% {
+      -webkit-transform: translate(40%, 0%);
+              transform: translate(40%, 0%);
+    }
+    96% {
+      -webkit-transform: translate(20%, 0%);
+              transform: translate(20%, 0%);
+    }
+    98% {
+      -webkit-transform: translate(10%, 0%);
+              transform: translate(10%, 0%);
+    }
+    100% {
+      -webkit-transform: translate(0%, 0%);
+              transform: translate(0%, 0%);
+    }
   }
   .intro header h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-area: h2;
     color: white;
   }
@@ -366,11 +857,17 @@ footer a {
     padding-bottom: 15px;
   }
   .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
 /* Large/Desktop size screen */
 @media only screen and (min-width: 1000px) {
   body {
@@ -378,7 +875,8 @@ footer a {
   }
   .preamble {
     width: 76.5%;
-    justify-self: right;
+    -ms-grid-column-align: right;
+        justify-self: right;
   }
   .preamble h3 {
     text-align: center;
@@ -388,20 +886,26 @@ footer a {
     padding-bottom: 15px;
   }
   .intro header {
-    justify-self: left;
+    -ms-grid-column-align: left;
+        justify-self: left;
     margin-left: 30%;
   }
   .summary {
     width: 65%;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     text-align: center;
   }
   #zen-supporting {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "explanation participation" "explanation participation" "explanation benefits" "requirements requirements" "footer footer";
+        grid-template-areas: "explanation participation" "explanation participation" "explanation benefits" "requirements requirements" "footer footer";
   }
   /* So What Is this About? */
   .explanation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
     grid-area: explanation;
     background-image: url(/Images/stocksolarsystem_cropped.jpg);
     background-size: contain;
@@ -409,6 +913,9 @@ footer a {
     background-position: bottom;
   }
   .participation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: participation;
   }
   #zen-participation.participation {
@@ -416,9 +923,14 @@ footer a {
     padding-bottom: 15px;
   }
   .benefits {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: benefits;
   }
   .requirements {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: requirements;
   }
   #zen-requirements.requirements {
@@ -440,8 +952,10 @@ footer a {
     left: 0px;
   }
   footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: footer;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
