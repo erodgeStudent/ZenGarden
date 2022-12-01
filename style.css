@@ -430,8 +430,8 @@ footer a {
     grid-area: h1;
     font-size: x-large;
     color: #e08ee0;
-    -webkit-animation: orbit 8s linear infinite;
-            animation: orbit 8s linear infinite;
+    -webkit-animation: orbit 10s linear infinite;
+            animation: orbit 10s linear infinite;
   }
   @-webkit-keyframes orbit {
     0% {
@@ -439,128 +439,128 @@ footer a {
               transform: translate(0%, 0%);
     }
     2% {
-      -webkit-transform: translate(10%, 50%);
-              transform: translate(10%, 50%);
+      -webkit-transform: translate(10%, 30%);
+              transform: translate(10%, 30%);
     }
     4% {
-      -webkit-transform: translate(20%, 52%);
-              transform: translate(20%, 52%);
+      -webkit-transform: translate(20%, 50%);
+              transform: translate(20%, 50%);
     }
     6% {
-      -webkit-transform: translate(30%, 54%);
-              transform: translate(30%, 54%);
+      -webkit-transform: translate(30%, 60%);
+              transform: translate(30%, 60%);
     }
     8% {
-      -webkit-transform: translate(40%, 57%);
-              transform: translate(40%, 57%);
+      -webkit-transform: translate(40%, 70%);
+              transform: translate(40%, 70%);
     }
     10% {
-      -webkit-transform: translate(50%, 60%);
-              transform: translate(50%, 60%);
+      -webkit-transform: translate(50%, 80%);
+              transform: translate(50%, 80%);
     }
     12% {
-      -webkit-transform: translate(60%, 64%);
-              transform: translate(60%, 64%);
+      -webkit-transform: translate(60%, 90%);
+              transform: translate(60%, 90%);
     }
     14% {
-      -webkit-transform: translate(70%, 68%);
-              transform: translate(70%, 68%);
+      -webkit-transform: translate(70%, 90%);
+              transform: translate(70%, 90%);
     }
     16% {
-      -webkit-transform: translate(80%, 72%);
-              transform: translate(80%, 72%);
+      -webkit-transform: translate(80%, 90%);
+              transform: translate(80%, 90%);
     }
     18% {
-      -webkit-transform: translate(90%, 76%);
-              transform: translate(90%, 76%);
+      -webkit-transform: translate(90%, 90%);
+              transform: translate(90%, 90%);
     }
     20% {
-      -webkit-transform: translate(100%, 81%);
-              transform: translate(100%, 81%);
+      -webkit-transform: translate(100%, 90%);
+              transform: translate(100%, 90%);
     }
     22% {
-      -webkit-transform: translate(110%, 85%);
-              transform: translate(110%, 85%);
+      -webkit-transform: translate(110%, 90%);
+              transform: translate(110%, 90%);
     }
     24% {
-      -webkit-transform: translate(120%, 89%);
-              transform: translate(120%, 89%);
+      -webkit-transform: translate(120%, 90%);
+              transform: translate(120%, 90%);
     }
     26% {
-      -webkit-transform: translate(130%, 92%);
-              transform: translate(130%, 92%);
+      -webkit-transform: translate(130%, 90%);
+              transform: translate(130%, 90%);
     }
     28% {
-      -webkit-transform: translate(140%, 95%);
-              transform: translate(140%, 95%);
+      -webkit-transform: translate(140%, 90%);
+              transform: translate(140%, 90%);
     }
     30% {
-      -webkit-transform: translate(150%, 98%);
-              transform: translate(150%, 98%);
+      -webkit-transform: translate(150%, 90%);
+              transform: translate(150%, 90%);
     }
     32% {
-      -webkit-transform: translate(160%, 100%);
-              transform: translate(160%, 100%);
+      -webkit-transform: translate(160%, 90%);
+              transform: translate(160%, 90%);
     }
     34% {
-      -webkit-transform: translate(170%, 98%);
-              transform: translate(170%, 98%);
+      -webkit-transform: translate(170%, 90%);
+              transform: translate(170%, 90%);
     }
     36% {
-      -webkit-transform: translate(180%, 95%);
-              transform: translate(180%, 95%);
+      -webkit-transform: translate(180%, 90%);
+              transform: translate(180%, 90%);
     }
     38% {
-      -webkit-transform: translate(190%, 92%);
-              transform: translate(190%, 92%);
+      -webkit-transform: translate(190%, 90%);
+              transform: translate(190%, 90%);
     }
     40% {
-      -webkit-transform: translate(200%, 89%);
-              transform: translate(200%, 89%);
+      -webkit-transform: translate(200%, 90%);
+              transform: translate(200%, 90%);
     }
     42% {
-      -webkit-transform: translate(210%, 85%);
-              transform: translate(210%, 85%);
+      -webkit-transform: translate(210%, 90%);
+              transform: translate(210%, 90%);
     }
     44% {
-      -webkit-transform: translate(220%, 81%);
-              transform: translate(220%, 81%);
+      -webkit-transform: translate(220%, 90%);
+              transform: translate(220%, 90%);
     }
     46% {
-      -webkit-transform: translate(230%, 76%);
-              transform: translate(230%, 76%);
+      -webkit-transform: translate(230%, 90%);
+              transform: translate(230%, 90%);
     }
     48% {
-      -webkit-transform: translate(240%, 72%);
-              transform: translate(240%, 72%);
+      -webkit-transform: translate(240%, 90%);
+              transform: translate(240%, 90%);
     }
     50% {
-      -webkit-transform: translate(250%, 68%);
-              transform: translate(250%, 68%);
+      -webkit-transform: translate(250%, 90%);
+              transform: translate(250%, 90%);
     }
     52% {
-      -webkit-transform: translate(260%, 64%);
-              transform: translate(260%, 64%);
+      -webkit-transform: translate(260%, 90%);
+              transform: translate(260%, 90%);
     }
     54% {
-      -webkit-transform: translate(270%, 61%);
-              transform: translate(270%, 61%);
+      -webkit-transform: translate(270%, 90%);
+              transform: translate(270%, 90%);
     }
     56% {
-      -webkit-transform: translate(280%, 58%);
-              transform: translate(280%, 58%);
+      -webkit-transform: translate(280%, 90%);
+              transform: translate(280%, 90%);
     }
     58% {
-      -webkit-transform: translate(290%, 55%);
-              transform: translate(290%, 55%);
+      -webkit-transform: translate(290%, 70%);
+              transform: translate(290%, 70%);
     }
     60% {
-      -webkit-transform: translate(300%, 51%);
-              transform: translate(300%, 51%);
+      -webkit-transform: translate(300%, 50%);
+              transform: translate(300%, 50%);
     }
     62% {
-      -webkit-transform: translate(310%, 48%);
-              transform: translate(310%, 48%);
+      -webkit-transform: translate(310%, 30%);
+              transform: translate(310%, 30%);
     }
     64% {
       -webkit-transform: translate(320%, 0%);
@@ -645,128 +645,128 @@ footer a {
               transform: translate(0%, 0%);
     }
     2% {
-      -webkit-transform: translate(10%, 50%);
-              transform: translate(10%, 50%);
+      -webkit-transform: translate(10%, 30%);
+              transform: translate(10%, 30%);
     }
     4% {
-      -webkit-transform: translate(20%, 52%);
-              transform: translate(20%, 52%);
+      -webkit-transform: translate(20%, 50%);
+              transform: translate(20%, 50%);
     }
     6% {
-      -webkit-transform: translate(30%, 54%);
-              transform: translate(30%, 54%);
+      -webkit-transform: translate(30%, 60%);
+              transform: translate(30%, 60%);
     }
     8% {
-      -webkit-transform: translate(40%, 57%);
-              transform: translate(40%, 57%);
+      -webkit-transform: translate(40%, 70%);
+              transform: translate(40%, 70%);
     }
     10% {
-      -webkit-transform: translate(50%, 60%);
-              transform: translate(50%, 60%);
+      -webkit-transform: translate(50%, 80%);
+              transform: translate(50%, 80%);
     }
     12% {
-      -webkit-transform: translate(60%, 64%);
-              transform: translate(60%, 64%);
+      -webkit-transform: translate(60%, 90%);
+              transform: translate(60%, 90%);
     }
     14% {
-      -webkit-transform: translate(70%, 68%);
-              transform: translate(70%, 68%);
+      -webkit-transform: translate(70%, 90%);
+              transform: translate(70%, 90%);
     }
     16% {
-      -webkit-transform: translate(80%, 72%);
-              transform: translate(80%, 72%);
+      -webkit-transform: translate(80%, 90%);
+              transform: translate(80%, 90%);
     }
     18% {
-      -webkit-transform: translate(90%, 76%);
-              transform: translate(90%, 76%);
+      -webkit-transform: translate(90%, 90%);
+              transform: translate(90%, 90%);
     }
     20% {
-      -webkit-transform: translate(100%, 81%);
-              transform: translate(100%, 81%);
+      -webkit-transform: translate(100%, 90%);
+              transform: translate(100%, 90%);
     }
     22% {
-      -webkit-transform: translate(110%, 85%);
-              transform: translate(110%, 85%);
+      -webkit-transform: translate(110%, 90%);
+              transform: translate(110%, 90%);
     }
     24% {
-      -webkit-transform: translate(120%, 89%);
-              transform: translate(120%, 89%);
+      -webkit-transform: translate(120%, 90%);
+              transform: translate(120%, 90%);
     }
     26% {
-      -webkit-transform: translate(130%, 92%);
-              transform: translate(130%, 92%);
+      -webkit-transform: translate(130%, 90%);
+              transform: translate(130%, 90%);
     }
     28% {
-      -webkit-transform: translate(140%, 95%);
-              transform: translate(140%, 95%);
+      -webkit-transform: translate(140%, 90%);
+              transform: translate(140%, 90%);
     }
     30% {
-      -webkit-transform: translate(150%, 98%);
-              transform: translate(150%, 98%);
+      -webkit-transform: translate(150%, 90%);
+              transform: translate(150%, 90%);
     }
     32% {
-      -webkit-transform: translate(160%, 100%);
-              transform: translate(160%, 100%);
+      -webkit-transform: translate(160%, 90%);
+              transform: translate(160%, 90%);
     }
     34% {
-      -webkit-transform: translate(170%, 98%);
-              transform: translate(170%, 98%);
+      -webkit-transform: translate(170%, 90%);
+              transform: translate(170%, 90%);
     }
     36% {
-      -webkit-transform: translate(180%, 95%);
-              transform: translate(180%, 95%);
+      -webkit-transform: translate(180%, 90%);
+              transform: translate(180%, 90%);
     }
     38% {
-      -webkit-transform: translate(190%, 92%);
-              transform: translate(190%, 92%);
+      -webkit-transform: translate(190%, 90%);
+              transform: translate(190%, 90%);
     }
     40% {
-      -webkit-transform: translate(200%, 89%);
-              transform: translate(200%, 89%);
+      -webkit-transform: translate(200%, 90%);
+              transform: translate(200%, 90%);
     }
     42% {
-      -webkit-transform: translate(210%, 85%);
-              transform: translate(210%, 85%);
+      -webkit-transform: translate(210%, 90%);
+              transform: translate(210%, 90%);
     }
     44% {
-      -webkit-transform: translate(220%, 81%);
-              transform: translate(220%, 81%);
+      -webkit-transform: translate(220%, 90%);
+              transform: translate(220%, 90%);
     }
     46% {
-      -webkit-transform: translate(230%, 76%);
-              transform: translate(230%, 76%);
+      -webkit-transform: translate(230%, 90%);
+              transform: translate(230%, 90%);
     }
     48% {
-      -webkit-transform: translate(240%, 72%);
-              transform: translate(240%, 72%);
+      -webkit-transform: translate(240%, 90%);
+              transform: translate(240%, 90%);
     }
     50% {
-      -webkit-transform: translate(250%, 68%);
-              transform: translate(250%, 68%);
+      -webkit-transform: translate(250%, 90%);
+              transform: translate(250%, 90%);
     }
     52% {
-      -webkit-transform: translate(260%, 64%);
-              transform: translate(260%, 64%);
+      -webkit-transform: translate(260%, 90%);
+              transform: translate(260%, 90%);
     }
     54% {
-      -webkit-transform: translate(270%, 61%);
-              transform: translate(270%, 61%);
+      -webkit-transform: translate(270%, 90%);
+              transform: translate(270%, 90%);
     }
     56% {
-      -webkit-transform: translate(280%, 58%);
-              transform: translate(280%, 58%);
+      -webkit-transform: translate(280%, 90%);
+              transform: translate(280%, 90%);
     }
     58% {
-      -webkit-transform: translate(290%, 55%);
-              transform: translate(290%, 55%);
+      -webkit-transform: translate(290%, 70%);
+              transform: translate(290%, 70%);
     }
     60% {
-      -webkit-transform: translate(300%, 51%);
-              transform: translate(300%, 51%);
+      -webkit-transform: translate(300%, 50%);
+              transform: translate(300%, 50%);
     }
     62% {
-      -webkit-transform: translate(310%, 48%);
-              transform: translate(310%, 48%);
+      -webkit-transform: translate(310%, 30%);
+              transform: translate(310%, 30%);
     }
     64% {
       -webkit-transform: translate(320%, 0%);
