@@ -240,21 +240,20 @@ footer a{
     grid-template-areas: "header header header"
                           ". summary summary"
                           ". preamble preamble";
+    grid-template-columns: 1fr 3fr 3fr;
   }
 
   /* Snippet below page title */
   .summary{
     grid-area: summary;
-    align-content: end;
     background-color: $p-planet-background;
     text-align: right;
-    margin-left: 8.5%;
-    justify-self: end;
+    background-size: 100%;
   }
 
   /* The Road to Enlightenment */
   .preamble{
-
+    margin: 20px 0 20px 0;
     grid-area: preamble;
     justify-content: end;
     background-color: $p-planet-background;
