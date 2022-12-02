@@ -240,21 +240,20 @@ footer a{
     grid-template-areas: "header header header"
                           ". summary summary"
                           ". preamble preamble";
+    grid-template-columns: 1fr 3fr 3fr;
   }
 
   /* Snippet below page title */
   .summary{
     grid-area: summary;
-    align-content: end;
     background-color: $p-planet-background;
     text-align: right;
-    margin-left: 8.5%;
-    justify-self: end;
+    background-size: 100%;
   }
 
   /* The Road to Enlightenment */
   .preamble{
-
+    margin: 20px 0 20px 0;
     grid-area: preamble;
     justify-content: end;
     background-color: $p-planet-background;
@@ -264,6 +263,7 @@ footer a{
     grid-area: sidebar;
     display: block;
     height: fit-content;
+    margin-top: 100%vh;
   }
 
   .zen-resources ul li{
@@ -428,7 +428,12 @@ footer a{
   body {
     background-image: url(Images/shutterstock-306306104.webp);
   }
-
+  .intro{
+    grid-template-columns: unset;
+    justify-content: end;
+    margin-left: 8.5%;
+    justify-self: end;
+  }
   .preamble{
     width: 76.5%;
     justify-self: right;
@@ -446,6 +451,7 @@ footer a{
     margin-left: 30%;
   }
   .summary{
+    margin-left: 8.5%;
     width:65%;
     justify-self: center;
     text-align: center;
