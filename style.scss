@@ -263,6 +263,7 @@ footer a{
     grid-area: sidebar;
     display: block;
     height: fit-content;
+    margin-top: 100%vh;
   }
 
   .zen-resources ul li{
@@ -427,7 +428,12 @@ footer a{
   body {
     background-image: url(Images/shutterstock-306306104.webp);
   }
-
+  .intro{
+    grid-template-columns: unset;
+    justify-content: end;
+    margin-left: 8.5%;
+    justify-self: end;
+  }
   .preamble{
     width: 76.5%;
     justify-self: right;
@@ -445,6 +451,7 @@ footer a{
     margin-left: 30%;
   }
   .summary{
+    margin-left: 8.5%;
     width:65%;
     justify-self: center;
     text-align: center;
