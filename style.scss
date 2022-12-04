@@ -432,9 +432,24 @@ footer a{
     grid-template-columns: 1fr;
     justify-self: end;
   }
-  header h1{
+  .intro header h1{
     width:50%;
-    animation-play-state: paused;
+    animation: orbit 2s ease-in-out infinite;
+    font-size:  30px;
+    text-align: flex-end;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  /*large screen animation creates 3D font rotation*/
+  @keyframes orbit {
+    50%{font-size: 45px;
+      transform: rotate3d(1, 1, 1, 45deg);
+      color: $galaxy-p-background1;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+    0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 #ccc,
+    0 7px 0 #ccc, 0 8px 0 #ccc,
+      }
   }
 
   .preamble{
