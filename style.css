@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap"); /*list of atoms in html
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+/*list of atoms in html
 h1
 h2
 p
@@ -23,25 +24,33 @@ body {
 }
 
 .page-wrapper {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "intro" "sidebar" "main";
+      grid-template-areas: 'intro' 'sidebar' 'main';
 }
 
 .intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: intro;
 }
 
 .sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: sidebar;
 }
 
 .main-supporting {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
 a {
   color: #FAB943;
-  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 
 a:hover {
@@ -65,7 +74,9 @@ h2 {
 h3 {
   color: #A99984;
   font-size: 1.5em;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 5px;
 }
 
@@ -82,36 +93,52 @@ header h2 {
   list-style-type: none;
   display: none;
   background-color: #DDD5CA;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav, .design-archives:hover nav {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 .design-selection:hover nav li, .design-archives:hover nav li {
   list-style-type: none;
   display: block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .design-selection:hover nav li a, .design-archives:hover nav li a {
   color: black;
 }
 
 .zen-resources:hover ul {
   display: block;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   top: 100%;
   cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .zen-resources:hover ul a {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #555;
 }
 
@@ -128,8 +155,12 @@ header {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin: 5px 20px 20px 20px;
   background-color: rgba(255, 255, 255, 0.3);
 }
@@ -139,7 +170,7 @@ footer a {
 }
 
 .summary {
-  font-size: 0.75em;
+  font-size: .75em;
   text-align: center;
 }
 
@@ -160,20 +191,20 @@ footer a {
   background-image: url(images/sunAndMountains.jpg);
   background-image: 100%;
   background-size: 100%;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
   color: black;
 }
 
 .explanation {
   background-image: url(images/nasa-Sun.jpg);
   background-size: 1000px;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-top: 0.1em;
+  padding-left: .75em;
+  padding-right: .75em;
+  padding-bottom: .75em;
+  padding-top: .1em;
 }
 
 .explanation p {
@@ -185,43 +216,54 @@ footer a {
 }
 
 .design-selection {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: selection;
 }
 
 .design-archives {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: archives;
 }
 
 .zen-resources {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: resources;
 }
 
 .wrapper {
   grid-area: wrap;
+  display: -ms-grid;
   display: grid;
   margin-left: 15px;
   margin-right: 15px;
-  grid-template-areas: "selection archives resources";
+      grid-template-areas: 'selection archives resources';
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .wrapper h3 {
   color: #A99984;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   font-size: medium;
 }
 
 .requirements p:last-of-type {
   margin-top: 30px;
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
 }
 
 /* Medium/Tablet size screen */
 @media only screen and (min-width: 600px) {
   h1 h2 h3 {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   body {
     background-image: url(/Images/solarsystem1.jpeg);
@@ -232,39 +274,48 @@ footer a {
     margin-top: 2rem;
   }
   body a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #design-selection a.designer-name:hover,
-#design-selection a.design-name:hover {
+  #design-selection a.design-name:hover {
     color: #F5E214;
   }
   .design-selection:hover nav li a, .design-archives:hover nav li a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #design-archives li.next a:hover, #design-archives li.viewall a:hover {
     color: #F5E214;
   }
   #zen-resources ul:hover {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   #zen-resources li a:hover {
     color: #F5E214;
   }
   .zen-resources:hover ul a {
-    color: rgb(224, 142, 224);
+    color: #e08ee0;
   }
   .page-wrapper {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "intro intro intro" "sidebar main main" "sidebar main main" "sidebar main main";
+        grid-template-areas: "intro intro intro" "sidebar main main" "sidebar main main" "sidebar main main";
   }
   .intro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: intro;
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "header header header" ". summary summary" ". preamble preamble";
-    grid-template-columns: 1fr 3fr 3fr;
+        grid-template-areas: "header header header" ". summary summary" ". preamble preamble";
+    -ms-grid-columns: 1fr 3fr 3fr;
+        grid-template-columns: 1fr 3fr 3fr;
   }
   /* Snippet below page title */
   .summary {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: summary;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: right;
@@ -273,15 +324,25 @@ footer a {
   /* The Road to Enlightenment */
   .preamble {
     margin: 20px 0 20px 0;
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: preamble;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     background-color: rgba(0, 0, 0, 0.6);
   }
   .sidebar {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
     grid-area: sidebar;
     display: block;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    margin-top: 100% vh;
+    margin-top: 100%vh;
   }
   .zen-resources ul li {
     margin-left: 15px;
@@ -292,7 +353,8 @@ footer a {
   }
   .zen-resources, .zen-resources ul, .design-selection, .design-selection nav, .design-archives, .design-selection, .design-selection nav, .design-archives nav {
     background-color: rgba(0, 0, 0, 0.6);
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   /*add button before wrapper*/
   .sidebar:after {
@@ -309,7 +371,8 @@ footer a {
   }
   .sidebar:hover .wrapper {
     position: absolute;
-    transition: 0.5s;
+    -webkit-transition: .5s;
+    transition: .5s;
     left: 0px;
   }
   .sidebar {
@@ -322,6 +385,10 @@ footer a {
   }
   /* Includes "So What Is This About?", "Participation", "Benefits". "Requirements" */
   .main-supporting {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     grid-area: main;
     background-image: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -348,173 +415,440 @@ footer a {
     margin: 0px 0px 5px 5px;
   }
   .intro header {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "h1 . h2 h2";
+        grid-template-areas: "h1 . h2 h2";
     background-image: none;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-area: header;
   }
   .intro header h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: h1;
     font-size: x-large;
-    color: rgb(224, 142, 224);
-    animation: orbit 10s linear infinite;
+    color: #e08ee0;
+    -webkit-animation: orbit 10s linear infinite;
+            animation: orbit 10s linear infinite;
+  }
+  @-webkit-keyframes orbit {
+    0% {
+      -webkit-transform: translate(50%, 0%);
+              transform: translate(50%, 0%);
+    }
+    2% {
+      -webkit-transform: translate(60%, 30%);
+              transform: translate(60%, 30%);
+    }
+    4% {
+      -webkit-transform: translate(70%, 50%);
+              transform: translate(70%, 50%);
+    }
+    6% {
+      -webkit-transform: translate(80%, 60%);
+              transform: translate(80%, 60%);
+    }
+    8% {
+      -webkit-transform: translate(90%, 70%);
+              transform: translate(90%, 70%);
+    }
+    10% {
+      -webkit-transform: translate(100%, 80%);
+              transform: translate(100%, 80%);
+    }
+    12% {
+      -webkit-transform: translate(110%, 90%);
+              transform: translate(110%, 90%);
+    }
+    14% {
+      -webkit-transform: translate(120%, 90%);
+              transform: translate(120%, 90%);
+    }
+    16% {
+      -webkit-transform: translate(130%, 90%);
+              transform: translate(130%, 90%);
+    }
+    18% {
+      -webkit-transform: translate(140%, 90%);
+              transform: translate(140%, 90%);
+    }
+    20% {
+      -webkit-transform: translate(150%, 90%);
+              transform: translate(150%, 90%);
+    }
+    22% {
+      -webkit-transform: translate(160%, 90%);
+              transform: translate(160%, 90%);
+    }
+    24% {
+      -webkit-transform: translate(170%, 90%);
+              transform: translate(170%, 90%);
+    }
+    26% {
+      -webkit-transform: translate(180%, 90%);
+              transform: translate(180%, 90%);
+    }
+    28% {
+      -webkit-transform: translate(190%, 90%);
+              transform: translate(190%, 90%);
+    }
+    30% {
+      -webkit-transform: translate(200%, 90%);
+              transform: translate(200%, 90%);
+    }
+    32% {
+      -webkit-transform: translate(210%, 90%);
+              transform: translate(210%, 90%);
+    }
+    34% {
+      -webkit-transform: translate(220%, 90%);
+              transform: translate(220%, 90%);
+    }
+    36% {
+      -webkit-transform: translate(230%, 90%);
+              transform: translate(230%, 90%);
+    }
+    38% {
+      -webkit-transform: translate(240%, 90%);
+              transform: translate(240%, 90%);
+    }
+    40% {
+      -webkit-transform: translate(250%, 90%);
+              transform: translate(250%, 90%);
+    }
+    42% {
+      -webkit-transform: translate(260%, 90%);
+              transform: translate(260%, 90%);
+    }
+    44% {
+      -webkit-transform: translate(270%, 90%);
+              transform: translate(270%, 90%);
+    }
+    46% {
+      -webkit-transform: translate(280%, 90%);
+              transform: translate(280%, 90%);
+    }
+    48% {
+      -webkit-transform: translate(290%, 90%);
+              transform: translate(290%, 90%);
+    }
+    50% {
+      -webkit-transform: translate(300%, 90%);
+              transform: translate(300%, 90%);
+    }
+    52% {
+      -webkit-transform: translate(310%, 90%);
+              transform: translate(310%, 90%);
+    }
+    54% {
+      -webkit-transform: translate(320%, 90%);
+              transform: translate(320%, 90%);
+    }
+    56% {
+      -webkit-transform: translate(310%, 80%);
+              transform: translate(310%, 80%);
+    }
+    58% {
+      -webkit-transform: translate(300%, 70%);
+              transform: translate(300%, 70%);
+    }
+    60% {
+      -webkit-transform: translate(290%, 50%);
+              transform: translate(290%, 50%);
+    }
+    62% {
+      -webkit-transform: translate(280%, 30%);
+              transform: translate(280%, 30%);
+    }
+    64% {
+      -webkit-transform: translate(270%, 0%);
+              transform: translate(270%, 0%);
+    }
+    66% {
+      -webkit-transform: translate(258%, 0%);
+              transform: translate(258%, 0%);
+    }
+    68% {
+      -webkit-transform: translate(246%, 0%);
+              transform: translate(246%, 0%);
+    }
+    70% {
+      -webkit-transform: translate(234%, 0%);
+              transform: translate(234%, 0%);
+    }
+    72% {
+      -webkit-transform: translate(222%, 0%);
+              transform: translate(222%, 0%);
+    }
+    74% {
+      -webkit-transform: translate(210%, 0%);
+              transform: translate(210%, 0%);
+    }
+    76% {
+      -webkit-transform: translate(198%, 0%);
+              transform: translate(198%, 0%);
+    }
+    78% {
+      -webkit-transform: translate(186%, 0%);
+              transform: translate(186%, 0%);
+    }
+    80% {
+      -webkit-transform: translate(174%, 0%);
+              transform: translate(174%, 0%);
+    }
+    82% {
+      -webkit-transform: translate(162%, 0%);
+              transform: translate(162%, 0%);
+    }
+    84% {
+      -webkit-transform: translate(150%, 0%);
+              transform: translate(150%, 0%);
+    }
+    86% {
+      -webkit-transform: translate(138%, 0%);
+              transform: translate(138%, 0%);
+    }
+    88% {
+      -webkit-transform: translate(126%, 0%);
+              transform: translate(126%, 0%);
+    }
+    90% {
+      -webkit-transform: translate(114%, 0%);
+              transform: translate(114%, 0%);
+    }
+    92% {
+      -webkit-transform: translate(102%, 0%);
+              transform: translate(102%, 0%);
+    }
+    94% {
+      -webkit-transform: translate(90%, 0%);
+              transform: translate(90%, 0%);
+    }
+    96% {
+      -webkit-transform: translate(78%, 0%);
+              transform: translate(78%, 0%);
+    }
+    98% {
+      -webkit-transform: translate(66%, 0%);
+              transform: translate(66%, 0%);
+    }
+    100% {
+      -webkit-transform: translate(50%, 0%);
+              transform: translate(50%, 0%);
+    }
   }
   @keyframes orbit {
     0% {
-      transform: translate(0%, 0%);
+      -webkit-transform: translate(50%, 0%);
+              transform: translate(50%, 0%);
     }
     2% {
-      transform: translate(10%, 30%);
+      -webkit-transform: translate(60%, 30%);
+              transform: translate(60%, 30%);
     }
     4% {
-      transform: translate(20%, 50%);
+      -webkit-transform: translate(70%, 50%);
+              transform: translate(70%, 50%);
     }
     6% {
-      transform: translate(30%, 60%);
+      -webkit-transform: translate(80%, 60%);
+              transform: translate(80%, 60%);
     }
     8% {
-      transform: translate(40%, 70%);
+      -webkit-transform: translate(90%, 70%);
+              transform: translate(90%, 70%);
     }
     10% {
-      transform: translate(50%, 80%);
+      -webkit-transform: translate(100%, 80%);
+              transform: translate(100%, 80%);
     }
     12% {
-      transform: translate(60%, 90%);
+      -webkit-transform: translate(110%, 90%);
+              transform: translate(110%, 90%);
     }
     14% {
-      transform: translate(70%, 90%);
+      -webkit-transform: translate(120%, 90%);
+              transform: translate(120%, 90%);
     }
     16% {
-      transform: translate(80%, 90%);
+      -webkit-transform: translate(130%, 90%);
+              transform: translate(130%, 90%);
     }
     18% {
-      transform: translate(90%, 90%);
+      -webkit-transform: translate(140%, 90%);
+              transform: translate(140%, 90%);
     }
     20% {
-      transform: translate(100%, 90%);
+      -webkit-transform: translate(150%, 90%);
+              transform: translate(150%, 90%);
     }
     22% {
-      transform: translate(110%, 90%);
+      -webkit-transform: translate(160%, 90%);
+              transform: translate(160%, 90%);
     }
     24% {
-      transform: translate(120%, 90%);
+      -webkit-transform: translate(170%, 90%);
+              transform: translate(170%, 90%);
     }
     26% {
-      transform: translate(130%, 90%);
+      -webkit-transform: translate(180%, 90%);
+              transform: translate(180%, 90%);
     }
     28% {
-      transform: translate(140%, 90%);
+      -webkit-transform: translate(190%, 90%);
+              transform: translate(190%, 90%);
     }
     30% {
-      transform: translate(150%, 90%);
+      -webkit-transform: translate(200%, 90%);
+              transform: translate(200%, 90%);
     }
     32% {
-      transform: translate(160%, 90%);
+      -webkit-transform: translate(210%, 90%);
+              transform: translate(210%, 90%);
     }
     34% {
-      transform: translate(170%, 90%);
+      -webkit-transform: translate(220%, 90%);
+              transform: translate(220%, 90%);
     }
     36% {
-      transform: translate(180%, 90%);
+      -webkit-transform: translate(230%, 90%);
+              transform: translate(230%, 90%);
     }
     38% {
-      transform: translate(190%, 90%);
+      -webkit-transform: translate(240%, 90%);
+              transform: translate(240%, 90%);
     }
     40% {
-      transform: translate(200%, 90%);
+      -webkit-transform: translate(250%, 90%);
+              transform: translate(250%, 90%);
     }
     42% {
-      transform: translate(210%, 90%);
+      -webkit-transform: translate(260%, 90%);
+              transform: translate(260%, 90%);
     }
     44% {
-      transform: translate(220%, 90%);
+      -webkit-transform: translate(270%, 90%);
+              transform: translate(270%, 90%);
     }
     46% {
-      transform: translate(230%, 90%);
+      -webkit-transform: translate(280%, 90%);
+              transform: translate(280%, 90%);
     }
     48% {
-      transform: translate(240%, 90%);
+      -webkit-transform: translate(290%, 90%);
+              transform: translate(290%, 90%);
     }
     50% {
-      transform: translate(250%, 90%);
+      -webkit-transform: translate(300%, 90%);
+              transform: translate(300%, 90%);
     }
     52% {
-      transform: translate(260%, 90%);
+      -webkit-transform: translate(310%, 90%);
+              transform: translate(310%, 90%);
     }
     54% {
-      transform: translate(270%, 90%);
+      -webkit-transform: translate(320%, 90%);
+              transform: translate(320%, 90%);
     }
     56% {
-      transform: translate(280%, 90%);
+      -webkit-transform: translate(310%, 80%);
+              transform: translate(310%, 80%);
     }
     58% {
-      transform: translate(290%, 70%);
+      -webkit-transform: translate(300%, 70%);
+              transform: translate(300%, 70%);
     }
     60% {
-      transform: translate(300%, 50%);
+      -webkit-transform: translate(290%, 50%);
+              transform: translate(290%, 50%);
     }
     62% {
-      transform: translate(310%, 30%);
+      -webkit-transform: translate(280%, 30%);
+              transform: translate(280%, 30%);
     }
     64% {
-      transform: translate(320%, 0%);
+      -webkit-transform: translate(270%, 0%);
+              transform: translate(270%, 0%);
     }
     66% {
-      transform: translate(310%, 0%);
+      -webkit-transform: translate(258%, 0%);
+              transform: translate(258%, 0%);
     }
     68% {
-      transform: translate(300%, 0%);
+      -webkit-transform: translate(246%, 0%);
+              transform: translate(246%, 0%);
     }
     70% {
-      transform: translate(280%, 0%);
+      -webkit-transform: translate(234%, 0%);
+              transform: translate(234%, 0%);
     }
     72% {
-      transform: translate(260%, 0%);
+      -webkit-transform: translate(222%, 0%);
+              transform: translate(222%, 0%);
     }
     74% {
-      transform: translate(240%, 0%);
+      -webkit-transform: translate(210%, 0%);
+              transform: translate(210%, 0%);
     }
     76% {
-      transform: translate(220%, 0%);
+      -webkit-transform: translate(198%, 0%);
+              transform: translate(198%, 0%);
     }
     78% {
-      transform: translate(200%, 0%);
+      -webkit-transform: translate(186%, 0%);
+              transform: translate(186%, 0%);
     }
     80% {
-      transform: translate(180%, 0%);
+      -webkit-transform: translate(174%, 0%);
+              transform: translate(174%, 0%);
     }
     82% {
-      transform: translate(160%, 0%);
+      -webkit-transform: translate(162%, 0%);
+              transform: translate(162%, 0%);
     }
     84% {
-      transform: translate(140%, 0%);
+      -webkit-transform: translate(150%, 0%);
+              transform: translate(150%, 0%);
     }
     86% {
-      transform: translate(120%, 0%);
+      -webkit-transform: translate(138%, 0%);
+              transform: translate(138%, 0%);
     }
     88% {
-      transform: translate(100%, 0%);
+      -webkit-transform: translate(126%, 0%);
+              transform: translate(126%, 0%);
     }
     90% {
-      transform: translate(80%, 0%);
+      -webkit-transform: translate(114%, 0%);
+              transform: translate(114%, 0%);
     }
     92% {
-      transform: translate(60%, 0%);
+      -webkit-transform: translate(102%, 0%);
+              transform: translate(102%, 0%);
     }
     94% {
-      transform: translate(40%, 0%);
+      -webkit-transform: translate(90%, 0%);
+              transform: translate(90%, 0%);
     }
     96% {
-      transform: translate(20%, 0%);
+      -webkit-transform: translate(78%, 0%);
+              transform: translate(78%, 0%);
     }
     98% {
-      transform: translate(10%, 0%);
+      -webkit-transform: translate(66%, 0%);
+              transform: translate(66%, 0%);
     }
     100% {
-      transform: translate(0%, 0%);
+      -webkit-transform: translate(50%, 0%);
+              transform: translate(50%, 0%);
     }
   }
   .intro header h2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-area: h2;
     color: white;
   }
@@ -523,33 +857,53 @@ footer a {
     padding-bottom: 15px;
   }
   .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
+
 /* Large/Desktop size screen */
 @media only screen and (min-width: 1000px) {
   body {
     background-image: url(Images/shutterstock-306306104.webp);
   }
   .intro {
-    grid-template-columns: 1fr;
-    justify-self: end;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
   .intro header h1 {
     width: 50%;
-    animation: orbit 2s ease-in-out infinite;
+    -webkit-animation: orbit 2s ease-in-out infinite;
+            animation: orbit 2s ease-in-out infinite;
     font-size: 30px;
     text-align: flex-end;
-    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
     position: absolute;
   }
   /*large screen animation creates 3D font rotation*/
+  @-webkit-keyframes orbit {
+    50% {
+      font-size: 45px;
+      -webkit-transform: rotate3d(1, 1, 1, 45deg);
+              transform: rotate3d(1, 1, 1, 45deg);
+      color: #6E9378;
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc;
+    }
+  }
   @keyframes orbit {
     50% {
       font-size: 45px;
-      transform: rotate3d(1, 1, 1, 45deg);
+      -webkit-transform: rotate3d(1, 1, 1, 45deg);
+              transform: rotate3d(1, 1, 1, 45deg);
       color: #6E9378;
       text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc;
     }
@@ -571,15 +925,20 @@ footer a {
   .summary {
     margin-left: 8.5%;
     width: 65%;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     text-align: center;
   }
   #zen-supporting {
+    display: -ms-grid;
     display: grid;
-    grid-template-areas: "explanation participation" "explanation participation" "explanation benefits" "requirements requirements" "footer footer";
+        grid-template-areas: "explanation participation" "explanation participation" "explanation benefits" "requirements requirements" "footer footer";
   }
   /* So What Is this About? */
   .explanation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
     grid-area: explanation;
     background-image: url(/Images/stocksolarsystem_cropped.jpg);
     background-size: contain;
@@ -587,6 +946,9 @@ footer a {
     background-position: bottom;
   }
   .participation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
     grid-area: participation;
   }
   #zen-participation.participation {
@@ -594,9 +956,14 @@ footer a {
     padding-bottom: 15px;
   }
   .benefits {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
     grid-area: benefits;
   }
   .requirements {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: requirements;
   }
   #zen-requirements.requirements {
@@ -618,8 +985,10 @@ footer a {
     left: 0px;
   }
   footer {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: footer;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
