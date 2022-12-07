@@ -90,7 +90,7 @@ header {
   display: block;
   margin-top: 10px;
   margin-bottom: 15px;
-  background-image: url(images/fullSun.jpg);
+  background-image: url(Images/fullSun.jpg);
   background-size: 700px;
   background-blend-mode: normal;
   background-position: center;
@@ -125,7 +125,7 @@ footer a{
 }
 
 .benefits {
-  background-image: url(images/sunAndMountains.jpg);
+  background-image: url(Images/sunAndMountains.jpg);
   background-image: 100%;
   background-size: 100%;
   padding-left: .75em;
@@ -136,7 +136,7 @@ footer a{
 }
 
 .explanation {
-  background-image: url(images/nasa-Sun.jpg);
+  background-image: url(Images/nasa-Sun.jpg);
   background-size: 1000px;
   padding-left: .75em;
   padding-right: .75em;
@@ -191,7 +191,7 @@ footer a{
     color: $planet-link;
   }
   body{
-    background-image: url(/Images/solarsystem1.jpeg);
+    background-image: url(Images/solarsystem1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin-left: 1rem;
@@ -485,7 +485,7 @@ footer a{
   /* So What Is this About? */
   .explanation{
     grid-area: explanation;
-    background-image: url(/Images/stocksolarsystem_cropped.jpg);
+    background-image: url(Images/stocksolarsystem_cropped.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
